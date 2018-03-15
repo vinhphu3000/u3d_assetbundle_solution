@@ -5,6 +5,9 @@ using UnityEngine;
 public class Launch : MonoBehaviour {
     
 	void Start () {
+
+        TestSproto();
+
         GameObject.DontDestroyOnLoad(gameObject);
 
         ResHelper.CacheParent = gameObject.transform;
@@ -55,6 +58,36 @@ public class Launch : MonoBehaviour {
             },
             UnityEngine.SceneManagement.LoadSceneMode.Additive
         );
- 
+  
+    }
+
+    //测试sproto
+    void TestSproto()
+    { 
+
+        /*
+        Sproto.SprotoPack spack = new Sproto.SprotoPack();
+       
+        proto.Test1 t1 = new proto.Test1();
+        t1.A = 133;
+        t1.B = true;
+        t1.C = new List<proto.TTTT>();
+        t1.C.Add(new proto.TTTT{A = 56,B = false });
+        t1.C.Add(new proto.TTTT{A = 536,B = true });
+        t1.D = proto.Test12.OTHER;
+
+        var data = spack.pack(t1.encode());
+
+        data = spack.unpack(data);
+
+        t1 = new proto.Test1(data); 
+
+        Debug.LogError(t1.A + "  " + t1.B + t1.C.Count + " "+t1.D);
+
+        foreach (var v in t1.C)
+        {
+            Debug.LogError(v.A+"  "+v.B);
+        }
+        */
     }
 }
