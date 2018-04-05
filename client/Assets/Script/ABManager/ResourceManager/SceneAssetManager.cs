@@ -46,7 +46,7 @@ public class SceneAssetManager : AssetManager
         sr.AddLoadUpdateCall(onProcessUpdate);
         sr.AddAllCompleteCall(OnComplete);
         //启动异步加载
-        CoroutineManager.Singleton.AddCoroutine(sr.asyncLoad());
+        CoroutineManager.Singleton.startCoroutine(sr.asyncLoad());
     }
 
     [Obsolete("scene asset not support sync Load. Use  LoadScene(string name,Action<float> onProcessUpdate, Action OnComplete) instead.", true)]

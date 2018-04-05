@@ -139,7 +139,7 @@ public abstract class Asset
     {
         if (state == ResLoadingState.LOADSTATE_UNLOADED)
         {
-            asyncCoroId = CoroutineManager.Singleton.AddCoroutine(asyncLoadReal());
+            asyncCoroId = CoroutineManager.Singleton.startCoroutine(asyncLoadReal());
         }
         else if(state== ResLoadingState.LOADSTATE_LOADED)
         {

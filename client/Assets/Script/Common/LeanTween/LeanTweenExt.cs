@@ -69,11 +69,11 @@ public static class LeanTweenExt
 
     static public long WaitForNextFrameCall(Action call)
     {
-        return CoroutineManager.Singleton.AddCoroutine(new WaitForNextFrameCallHolder().Do(call));
+        return CoroutineManager.Singleton.startCoroutine(new WaitForNextFrameCallHolder().Do(call));
     }
 
     static public void CancelWaitForNextFrameCall(long id)
     {
-        CoroutineManager.Singleton.RemoveCoroutine(id);
+        CoroutineManager.Singleton.stopCoroutine(id);
     } 
 }

@@ -63,15 +63,14 @@ public sealed class IOAndroidLoader
     }
 }
 #endif
+
 public class IOTools
 {
     public static string packageResBasePath;
     static string packageResBaseWWWPath;
 
     static string updateResBasePath;
-
-    static Dictionary<string, bool> updateFiles = new Dictionary<string, bool>();
-
+ 
     public static string abSuffix
     {
         get
@@ -160,30 +159,22 @@ public class IOTools
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    public static byte[] GetResFileData(string name, bool isResEx = false)
+    public static byte[] GetResFileData(string name,bool fromPackage = true)
     {
         if (string.IsNullOrEmpty(name))
         {
             Debug.LogError("GetResFileData name is null!");
         }
-        string uppath = updateResBasePath + name;
-        bool isUpdate = false;
-        if (updateFiles.TryGetValue(name, out isUpdate))
-        {
-            if (isUpdate)
-                return File.ReadAllBytes(uppath);
-            else
-                return GetPackageFileData(name, isResEx);
-        }
+        string uppath = updateResBasePath + name; 
 
         if (File.Exists(uppath))
         {
-            updateFiles[name] = true;
             return File.ReadAllBytes(uppath);
         }
-
-        updateFiles[name] = false;
-        return GetPackageFileData(name, isResEx);
+        if (fromPackage)
+            return GetPackageFileData(name);
+        else
+            return null;
     }
 
     public static byte[] GetResFileDataFromUpdateDir(string name)
@@ -192,27 +183,18 @@ public class IOTools
         {
             Debug.LogError("GetResFileData name is null!");
         }
-        string uppath = updateResBasePath + name;
-        bool isUpdate = false;
-        if (updateFiles.TryGetValue(name, out isUpdate))
-        {
-            if (isUpdate)
-                return File.ReadAllBytes(uppath);
-            else
-                return null;
-        }
+        string uppath = updateResBasePath + name;  
 
         if (File.Exists(uppath))
         {
-            updateFiles[name] = true;
             return File.ReadAllBytes(uppath);
         }
         return null;
     }
 
-    public static string GetResFileString(string name, bool isResEx = false)
+   public static string GetResFileString(string name,bool fromPackage = true)
     {
-        var data = GetResFileData(name, isResEx);
+            var data = GetResFileData(name,fromPackage);
         if (data != null)
         {
             using (TextReader tr = new StreamReader(new MemoryStream(data)))
@@ -225,37 +207,22 @@ public class IOTools
 
     public static bool IsResInUpdateDir(string name)
     {
-        bool isUpdate = false;
-        if (updateFiles.TryGetValue(name, out isUpdate))
-        {
-            if (isUpdate)
-                return true;
-            else
-                return false;
-        }
-
         string uppath = updateResBasePath + name;
         if (File.Exists(uppath))
         {
-            updateFiles[name] = true;
             return true;
-        }
-
-        updateFiles[name] = false;
+        } 
         return false;
     }
 
-    public static byte[] GetPackageFileData(string name, bool isResEx = false)
+    public static byte[] GetPackageFileData(string name)
     {
         string path;
 
 #if UNITY_IPHONE
-        if (isResEx)
-        {
-            path = packageResBasePath + name;
-        }
-        else
-            path = Application.dataPath + "/Raw/" + name;
+
+         path = packageResBasePath + name;
+        
         if (File.Exists(path))
         {
             return File.ReadAllBytes(path);
@@ -266,14 +233,9 @@ public class IOTools
             return null;
         }
 #elif UNITY_ANDROID
-        if (isResEx)
-        {
-            path = "ResEx/" + name;
-        }
-        else
-        {
-            path = name;
-        }
+        
+        path = "ResEx/" + name;
+       
         return IOAndroidLoader.Instance.GetBytes(path);
 #else
         path = packageResBasePath + name;
@@ -303,8 +265,7 @@ public class IOTools
 
     public static void DeleteFileFromUpdateDir(string name)
     {
-        string s = updateResBasePath + name;
-        updateFiles.Remove(name);
+        string s = updateResBasePath + name; 
         if (File.Exists(s))
             File.Delete(s);
     }

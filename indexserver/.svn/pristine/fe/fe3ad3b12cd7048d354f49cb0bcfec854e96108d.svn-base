@@ -1,0 +1,22 @@
+{
+    "ClientCodeVersion": "1.2.1",
+	"BeOpenCode": "true",
+	"TestClientCodeVersion": "1.2.1",	
+	"HotFixTitle": "指挥官已就位，指挥系统升级中",
+	"HotFixTip": "",
+	"ErrorTip":"指挥系统升级失败",
+	"CodeMD5":"16C1F39DE229BE15F77EFF8D05916419",
+	"TestCodeMD5":"16C1F39DE229BE15F77EFF8D05916419",
+	"IndexServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/channelIdParam/clientcodeurl/CodeServerUrlConfig.json",
+            "random": 100
+        }
+    ],
+    "CodeServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/channelIdParam/clientcodedll/",
+            "random": 100
+        }
+    ]
+}

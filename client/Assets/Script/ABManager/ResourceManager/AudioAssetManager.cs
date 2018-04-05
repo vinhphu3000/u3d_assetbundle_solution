@@ -214,7 +214,7 @@ public class AudioAssetManager:AssetManager
         asset.AddRef();
         if (!loop)
         {
-            CoroutineManager.Singleton.DelayedCall(clip.length, ()=>autoRemove(id));
+            CoroutineManager.Singleton.delayedCall(clip.length, ()=>autoRemove(id));
         }
         return id;
     } 
@@ -236,7 +236,7 @@ public class AudioAssetManager:AssetManager
         }
         else
         {
-            CoroutineManager.Singleton.DelayedCall(delayTime, () => autoRemove(id));
+            CoroutineManager.Singleton.delayedCall(delayTime, () => autoRemove(id));
         }
     }
 

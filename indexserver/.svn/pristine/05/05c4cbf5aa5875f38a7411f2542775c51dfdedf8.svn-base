@@ -1,0 +1,85 @@
+{
+    "AppVersion": "1.2.0",
+    "ResourceVersion": "1.2.6",
+    "Passed": "true",
+    "Back": "t",
+    "Version": "1.0.0",
+    "BeOpenRes": "false",
+    "TestResVersion": "1.2.4",
+    "BeOpenApp": "true",
+    "TestAppVersion": "1.2.0",
+    "WhiteList": [
+        "bec6779dc2a69da5c504e4bb64e19f9c",
+        "860988031999068",
+        "37b6bf544635b6eb1be97d0efd544ab0",
+        "864394010349720",
+        "ff135f53707c262f2967ee44fb060ae6",
+        "99000562338711",
+        "353627079166248"
+    ],
+    "NoticeUrl": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/channelIdParam/notice/notice.json",
+            "random": 100
+        }
+    ],
+    "ServerLists": [
+        {
+            "ServerId": "9",
+            "ServerName": "19816010",
+            "ServerNameDesc": "TAPTAP封测服",
+            "ServerUrl": "101.132.163.136",
+            "Port": "30001",
+            "ServerStatus": "1",
+            "TimeZone": "+8:00",
+            "Desc": "19816999",
+            "para": [
+                "2016-08-12 14:00"
+            ],
+            "random": 1,
+            "map": {
+                "mapName": "map.bytes",
+                "mapRes": "worldmap",
+                "mapFileList": "MapFileList_1"
+            }
+        }
+    ],
+    "GroupLists": [
+        {
+            "Id": "102",
+            "Name": "19816907",
+            "List": "6",
+            "Status": "1"
+        }
+    ],
+    "UpdateUrl": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/update_url/",
+            "random": 100
+        }
+    ],
+    "ResourceServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/resources/",
+            "random": 100
+        }
+    ],
+    "IndexServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/serverList/ServerList.json",
+            "random": 100
+        }
+    ],
+    "MapServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/map/",
+            "random": 100
+        }
+    ],
+    "SubPackageServer": [
+        {
+            "url": "http://cdnpaytest1.valorofstar.com/taptap/1.2/sub_package/",
+            "random": 100
+        }
+    ]
+}

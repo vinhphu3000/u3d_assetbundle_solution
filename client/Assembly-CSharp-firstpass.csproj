@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{3A1B43A0-276E-34FB-197E-1ACDE9001A0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Json\JsonData.cs" />
+     <Compile Include="Assets\Plugins\Json\JsonMapper.cs" />
+     <Compile Include="Assets\Plugins\Json\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\Scripts\BaseConfig.cs" />
+     <Compile Include="Assets\Plugins\Scripts\CoroutineManager.cs" />
+     <Compile Include="Assets\Plugins\Scripts\HttpDownload.cs" />
+     <Compile Include="Assets\Plugins\Scripts\IdAssginer.cs" />
+     <Compile Include="Assets\Plugins\Scripts\SingletonTemplate.cs" />
+     <Compile Include="Assets\Plugins\Scripts\StringTools.cs" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\Lighting.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\AlphaShader.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-Parallax.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Toony-Basic.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Mobile_Additive_Unculling.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-ParallaxSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBarkRendertex.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\RimLightAlpha.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Alpha Blend Cull.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Unlit-Detail.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\dissolution_add.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Mobile Two Texture Flow.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-Flare.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Lightmap-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\AutoLight.cginc" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\AddOn\FairyGUI-BlurFilter.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Alpha (Support Lightmap) Tint.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-GUITextureClipText.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\xft_glow_perobj_additive.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-GUITextureBlit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UIFlare.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeVertexLit.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle VertexLit Blended.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\dissolution_blend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-GUITexture.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\UIColoredGray.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Text.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\RadialBlur.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Unlit\Unlit-Normal-Color.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Sprites-Default.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Text-Brighter.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\Tessellation.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Skybox.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-BumpNolight.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-PrePassLighting.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Add.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\cgjoy-UVAniHHRDAdd.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Particle Alpha Blend Tint Level ColorMask.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Shadow-ScreenBlurRotated.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Shadow-Illumin-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Energy Ball.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-Parallax.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-DefaultFont.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesOptimized.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\SoftOcclusion\SH_Vertex.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkOptimized.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFast.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Unlit-TextDetail.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Slg-Flick.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Lit-Detail.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Unlit-Transparent.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\skybox cubed.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Mobile Flow.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\GreyShader.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Default.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Particle Blend Add.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle AddSmooth.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\UIColoredGray.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Lightmap-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Font.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Lit-RefractionDetail(ProOnly).shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle AddMultiply.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\RimLight.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Trees\BillboardTree.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Slg-PathLine.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-BlitCopy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-Parallax.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-GUITextureClip.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Flare.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-Parallax.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeaves.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-CombineDepthNormals.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Lit-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Lightmap-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Particle-Add.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Lit-Transparent.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\distortShader.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-Halo.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-Image.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\AlphaBlendMaskTintTwoAlpha.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\Terrain\TerrBumpAddPass.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Lit-Refraction(ProOnly).shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-SoftEdgeUnlit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\dissolution_blend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Toony-Lighted.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkRendertex.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-DiffuseFast.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Details\WavingGrassBillboard.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Skybox.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Splats\AddPass.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Curved.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-PrePassCollectShadows.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\Terrain\TerrBumpFirstPass.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesRendertex.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-ErrorShader.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-Diffuse_Skybox.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-ParallaxSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaBlend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Premultiply Blend UI.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Particle Alpha Add Tint Level ColorMask.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Details\VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-ParallaxSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Alpha Blend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBark.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Add Mask.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Splats\FirstPass.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\RimLight2.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\TerrainEngine.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\UnityShaderVariables.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\AlphaTransparent.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Decal.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-DiffuseDetail.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\UnityCG.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\TransparentShader.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\TerrainShaders\Details\WavingGrass.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-Bumped.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Camera-DepthTexture.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-BumpVertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\UIColoredGrayMask.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-Particle-Multiply.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Lightmap-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\AlphaTransparent-flow.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Multiply.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Lightmap-VertexLit.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\cgjoy-UVAniHHRD.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Camera-DepthNormalTexture.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Particle Blend.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Internal-Clear.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\xf_heat_distortion.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResources\Shadow-ScreenBlur.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\UI\UI-Unlit-Text.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Particle Alpha Blend Tint.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\Alpha Blend Mask.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Reflect-ParallaxSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\SM_TransparentRim.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
+     <None Include="Assets\FairyGUI\Resources\Shaders\FairyGUI-BMFont.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\CGIncludes\HLSLSupport.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Sprites-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeavesRendertex.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\Tree.cginc" />
+     <None Include="Assets\ArtResources\ArtDataBase\ExternShader\Rim\RimLightAlphaTransparent.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Illumin-Glossy.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Alpha-Diffuse.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Unlit\Unlit-Normal.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBark.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Normal-BumpSpec.shader" />
+     <None Include="Assets\ArtResources\ArtDataBase\BuildInShaders\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity2017.2f3/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/lixiuzhi/Documents/unity_project/LGameframework/baseframework/client/Assets/Plugins/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/lixiuzhi/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/lixiuzhi/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

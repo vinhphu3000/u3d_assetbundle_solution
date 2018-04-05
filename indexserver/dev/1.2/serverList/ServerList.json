@@ -1,0 +1,24 @@
+{
+    "AppVersion": "1.2.0",
+    "ResourceVersion": "1.2.0",
+    "Passed": "true",
+    "Back": "t",
+    "BeOpenRes": "false",
+    "TestResVersion": "1.2.4",
+    "BeOpenApp": "true",
+    "TestAppVersion": "1.2.0",
+
+    "ServerLists": [
+        {
+            "ServerId": "1",
+            "ServerName": "测试服",
+            "ServerNameDesc": "测试服",
+            "ServerUrl": "127.0.0.1",
+            "Port": "30001",
+            "ServerStatus": "1",
+            "TimeZone": "+8:00",
+            "Desc": "19816999",
+            "Para":"2016-08-12 14:00"
+        }
+    ]
+}

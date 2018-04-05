@@ -1,0 +1,34 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Common/CoroutineManager.cs">
+    <Files>
+      <File FileName="Assets/Script/proto.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sproto/SprotoTypeSerialize.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sproto/SprotoTypeDeserialize.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sproto/SprotoTypeFieldOP.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sproto/Package.cs" Line="1" Column="1" />
+      <File FileName="Assets/Sproto/SprotoTypeBase.cs" Line="1" Column="1" />
+      <File FileName="Assets/Editor/BuildFGUIResBundle.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Window/BaseWindow.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/ABManager/ResourceManager/SceneAssetManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Window/UIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/ABManager/Assets/SceneAsset.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Json/JsonData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/Json/JsonMapper.cs" Line="16" Column="4" />
+      <File FileName="Assets/Script/ServerList/ServerListDownload.cs" Line="13" Column="27" />
+      <File FileName="Assets/Plugins/Scripts/BaseConfig.cs" Line="24" Column="37" />
+      <File FileName="Assets/Plugins/Scripts/CoroutineManager.cs" Line="45" Column="5" />
+      <File FileName="Assets/Plugins/Scripts/HttpDownload.cs" Line="107" Column="44" />
+      <File FileName="Assets/Test/Launch.cs" Line="9" Column="40" />
+      <File FileName="Assets/Script/Common/CoroutineManager.cs" Line="56" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/lixiuzhi/Documents/unity_project/LGameframework/baseframework/client/Assets/Plugins/Scripts/HttpDownload.cs" line="103" column="31" />
+      <Breakpoint file="/Users/lixiuzhi/Documents/unity_project/LGameframework/baseframework/client/Assets/Plugins/Scripts/CoroutineManager.cs" line="62" column="1" />
+      <Breakpoint file="/Users/lixiuzhi/Documents/unity_project/LGameframework/baseframework/client/Assets/Plugins/Scripts/CoroutineManager.cs" line="51" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
