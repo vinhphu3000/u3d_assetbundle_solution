@@ -23,10 +23,10 @@ public class ServerInfo
 /// </summary>
 public class ServerList:SingletonTemplate<ServerList>
 {
-    public string BeOpenRes;            //白名单测试资源
+    public bool BeOpenRes;              //白名单测试资源
     public string TestResVersion;       //白名单测试资源版本号
 
-    public string BeOpenApp;            //白名单测试强更
+    public bool BeOpenApp;              //白名单测试强更
     public string TestAppVersion;       //白名单测试强更版本号
 
     public bool   IsWhiteList;          //前端是否处于白名单 
@@ -45,18 +45,6 @@ public class ServerList:SingletonTemplate<ServerList>
 
     static ServerList ins = null;
 
-    public static ServerList Singleton
-    {
-        get
-        {
-            if (ins == null)
-            {
-                ins = new ServerList();
-            }
-            return ins;
-        }
-    }
-
     public void Init(string json)
     {
         JsonData jsonData   = JsonMapper.ToObject(json);
@@ -64,9 +52,9 @@ public class ServerList:SingletonTemplate<ServerList>
         this.ResVersion     = jsonData["ResourceVersion"].ToString();
         this.IsPassed       = Convert.ToBoolean(jsonData["Passed"].ToString());
         this.BackCode       = jsonData["Back"].ToString();
-        this.BeOpenRes      = jsonData["BeOpenRes"].ToString();
+        this.BeOpenRes      = Convert.ToBoolean(jsonData["BeOpenRes"].ToString());
         this.TestResVersion = jsonData["TestResVersion"].ToString();
-        this.BeOpenApp      = jsonData["BeOpenApp"].ToString();
+        this.BeOpenApp      = Convert.ToBoolean(jsonData["BeOpenApp"].ToString());
         this.TestAppVersion = jsonData["TestAppVersion"].ToString();
 
         var servers = jsonData["ServerLists"] as JsonData;
